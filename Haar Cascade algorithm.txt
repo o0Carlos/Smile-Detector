@@ -1,0 +1,38 @@
+In a simple explanation, Haar (from its inventor) Cascade works as a casade.
+
+From an initial image, it starts "reducing" the image until it finds out an square
+that look like a face as a loop.
+
+
+The way it finds faces is becuase of the
+
+Haar Features:
+
+ - Edge Features
+ - Line Features
+ - Four-rectangle features
+
+This three features are used in an image to look out for a face.
+
+This algorithm doesn't actually look for a "face", this algorithm search for how darker or
+lighter an image is in certain áreas. So actually we only need grayscale. (search in
+google "haar features" to understand it better and see the actual features).
+
+-----
+
+Now, how does machine learning its aplied?
+
+Well, first of all we start training the Data with some positive image (faces) and some
+negative images (non faces). This is called "supervised machine learning".
+
+So the algorithm will aply the Edge Features at some points of the image and after finding
+the vectors where there is an edge features, it will apply the next feature. As a cascade.
+
+It will use an scoring system (corresponding to the times a feature can be applied to an
+image), until it finds a score of 1000 (for example) then it will say that it is a face.
+
+So yeah. Another simple explanation:
+
+In a loop, the algorithm will apply the Haar Features at every area of the image until
+it finds a face.
+

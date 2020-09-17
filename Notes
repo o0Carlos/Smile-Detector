@@ -1,0 +1,9 @@
+First of all, at the terminal (in this the terminal given by VS code)
+install opencv-python with the next commands:
+
+    python Smile_Detector.py
+    pip install opencv-python
+
+    (package install python or something like that, is npm from react)
+
+import cv2 (cv2 is the opencv library)
